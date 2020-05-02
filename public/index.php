@@ -8,7 +8,7 @@ use Kernel\Dispatcher;
  * like C:/xampp/htdocs/MyApp/index.php
  * then the APP_ROOT will be / since MyApp/index.php has been removed with str_replace
  */
-define('APP_ROOT', str_replace("public/index.php", "", $_SERVER["SCRIPT_NAME"]));
+define('APP_ROOT', str_replace("index.php", "", $_SERVER["SCRIPT_NAME"]));
 
 /**
  * This constant contains the absolute value of the current script
@@ -16,7 +16,7 @@ define('APP_ROOT', str_replace("public/index.php", "", $_SERVER["SCRIPT_NAME"]))
  * like C:/xampp/htdocs/MyApp/index.php
  * then the ROOT will be C:/xampp/htdocs/ since MyApp/index.php has been removed with str_replace
  */
-define('ROOT', str_replace("public/index.php", "", $_SERVER["SCRIPT_FILENAME"]));
+define('ROOT', str_replace("index.php", "", $_SERVER["SCRIPT_FILENAME"]));
 
 /**
  * Import of the require files

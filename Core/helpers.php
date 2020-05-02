@@ -6,7 +6,7 @@
  * @param $path
  */
 function asset($path) {
-    echo(url() . '/' . $path);
+    echo(url() . '/public/' . $path);
 }
 
 /**

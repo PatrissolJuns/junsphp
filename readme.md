@@ -19,7 +19,7 @@ In order to use the framework, just get the zip of the latest version at [Github
 Then extract it and run with this command:
 
 ```php
-php -S localhost:8080 -t public/
+php -S localhost:8080
 ```
 
 You will therefore get the default home page of the framework
