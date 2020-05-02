@@ -80,7 +80,7 @@ class Router
      * For request receiving in parameter, it will set the controller,
      * the action, the params according to the RoutingTable
      * 
-     * @param \Kernel\Request $request 
+     * @param \Kernel\Request $request
      */
     
     public static function parse($request)
@@ -97,7 +97,7 @@ class Router
 
         // If the route is not found in the RoutingTable then return the 400 Error
         if($index === false){
-            $request->setController('error');
+            $request->setController('Error');
             $request->setAction("error400");
         } 
         else {
@@ -105,7 +105,7 @@ class Router
 
             // If the method is not the one in the RoutingTable table, return a 405 Error 
             if($routeItem['method'] != $request->getMethod()){
-                $request->setController('error');
+                $request->setController('Error');
                 $request->setAction("error405");
             }
 

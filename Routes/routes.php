@@ -13,3 +13,4 @@ use Kernel\Router;
 |
 */
 
+Router::get('/', 'HomeController@index');

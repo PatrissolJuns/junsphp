@@ -8,4 +8,4 @@
 require(ROOT . "Config/Database.php");
 require(ROOT . "Core/Model.php");
 require(ROOT . "Core/Controller.php");
-require(ROOT . "Core/view.php");
+require(ROOT . "Core/View.php");
