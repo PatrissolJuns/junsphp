@@ -2,6 +2,9 @@
 PatrissolJuns
 
 [https://patrissol-juns.com](https://patrissol-juns.com) | [Github](https://github.com/PatrissolJuns) | [E-Mail](mailto:patrissolkenfack@gmail)
+ 
+![Logo JunsPHP](https://i.postimg.cc/3rb3LZp3/junsphp-logo.png)
+
 
 ## About JunsPHP
 
@@ -19,6 +22,8 @@ Then extract it and run with this command:
 ```php
 php -S localhost:8080 -t public/
 ```
+
+You will therefore get the default home page of the framework
 
 ## How to use JunsPHP
 
