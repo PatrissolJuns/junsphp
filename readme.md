@@ -1,13 +1,11 @@
 # Author
-PATRISSOL KENFACK
+PatrissolJuns
 
-Created by PatrissolJuns
-
-[Github](https://github.com/PatrissolJuns) | [E-Mail](mailto:patrissolkenfack@gmail)
+[https://patrissol-juns.com](https://patrissol-juns.com) | [Github](https://github.com/PatrissolJuns) | [E-Mail](mailto:patrissolkenfack@gmail)
 
 ## About JunsPHP
 
-JunsPHP is a new web application framework with a new vision of development in php. This framework will help you bluiding powerful application with smallest code.
+JunsPHP is a new web application framework with a new vision of development in php. This framework will help you building powerful application with smallest code.
 
 JunsPHP like others framework implements MVC architecture and brings out the powerful side of it.
 
@@ -64,13 +62,13 @@ class Thing extends Model
 }
 ```
 
-**Note:** please open this file `Core/Model` to get all the methods available.
+**Note:** please open this file `Core/Model` to get all the available methods.
 
 ### The Controller
 
-the controllers are found in the folder `Controllers` and their goal is to execute different action. 
+Controllers are found in `Controllers` folder and their goal is to execute different action. 
 
-The syntax is very similar to a normal php file just that it may include Model and other folder.
+The syntax is very similar to a normal php file just that it may include Model and other folders.
 
 here is an example of controller file
 
@@ -117,17 +115,17 @@ class ThingController extends Controller
 }
 ```
 
-**Note:** Here we have definded a constructor in order to be able to access information about request so a controller must have this constructor.
+**Note:** Here we have defined a constructor in order to be able to access information about request so a controller must have this constructor.
 
 ### The View
 
-The view in this framework are found in `Views`.
+View in this framework are found in `Views`.
 
 Since we have yet include a template engine, the manipulation of variable is done directly in PHP code.
 
 If you pass a variable from the controller to a view trough a table like this example up so, that variable will be directly accessible form the views.
 
-Still continuos our example of Thing, here is a way to display a list of things:
+Still continuous our example of Thing, here is a way to display a list of things:
 
 ```PHP
 <h1>Thing</h1>
@@ -162,12 +160,12 @@ Still continuos our example of Thing, here is a way to display a list of things:
 
 All the configuration about the database is inside `Config/Database` file.
 
-You just need to change the database credentials in orrder to match your own.
+You just need to change the database credentials in order to match your own.
 
 
 ## Contributing
 
-I will be very happy if you can contribute for this framework in order to bluit a more powerful framework.
+I will be very happy if you can contribute for this framework in order to built a more powerful framework.
 
 Do not hesitate to contact me at my email `patrissolkenfack@gmail.com`.
 
