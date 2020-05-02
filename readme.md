@@ -5,10 +5,20 @@ PatrissolJuns
 
 ## About JunsPHP
 
-JunsPHP is a new web application framework with a new vision of development in php. This framework will help you building powerful application with smallest code.
+JunsPHP is a fast, open-source, minimalist web Framework for PHP. It is simply the best choice for simple website and small apps such as portfolio page, landing page and so on.
 
-JunsPHP like others framework implements MVC architecture and brings out the powerful side of it.
+JunsPHP like others web framework implements MVC architecture and brings out the powerful side of it.
 
+
+## Install JunsPHP
+
+In order to use the framework, just get the zip of the latest version at [Github](https://github.com/PatrissolJuns/junsphp/archive/master.zip)
+
+Then extract it and run with this command:
+
+```php
+php -S localhost:8080 -t public/
+```
 
 ## How to use JunsPHP
 
@@ -25,44 +35,10 @@ If you want to and a `get` request to the controller `ThingController` and the a
 ```php
 Router::get('/thing/index', 'ThingController@index');
 ```
+
 This will be available at the route `/thing/index`
 
 This is the same thing for all other method
-
-### The Model
-
-All model is found in the folder `Models`. Each Modal extends the Model class which provide a sample of method such as:
-
-```PHP
-// findModel($ModelName, $id);
-
-// Example:
-findModel("Thing", $id);
-```
-which will retrieve a particular model passed in parameter.
-
-This is an example of a Model
-
-```PHP
-class Thing extends Model
-{
-    public $title;
-    public $description;
-    
-    public function find($id){
-        return $this->findModel("Thing", $id);
-    }
-    public function findAll(){
-        return $this->findModelAll("Thing");
-    }
-    public function save()
-    {
-        return $this->saveModel("thing", ['title', 'description'], [$this->title, $this->description]);
-    }
-}
-```
-
-**Note:** please open this file `Core/Model` to get all the available methods.
 
 ### The Controller
 
@@ -130,7 +106,8 @@ Still continuous our example of Thing, here is a way to display a list of things
 ```PHP
 <h1>Thing</h1>
 <div class="row col-md-12 centered">
-    <a href="/Rant/thing/create">Create</a>
+    <a href='<?php route("/thing/create") ?>'>Create</a>
+    <img src='<?php asset("assets/images/home.png") ?>' alt="logo" />
     <table class="table table-striped custab">
         <thead>
         <tr>
@@ -140,8 +117,7 @@ Still continuous our example of Thing, here is a way to display a list of things
         </tr>
         </thead>
         <?php
-        print_r($things);
-        foreach ($things as $thing)
+        foreach ($things as $thing) 
         {
         ?>
             <tr>
@@ -155,6 +131,48 @@ Still continuous our example of Thing, here is a way to display a list of things
     </table>
 </div>
 ```
+
+### Assets files
+
+The assets files can be found into `public/assets` folder.
+
+However, you can set your own structure within `public` folder.
+
+### The Model
+
+All model is found in the folder `Models`. Each Modal extends the Model class which provide a sample of method such as:
+
+```PHP
+// findModel($ModelName, $id);
+
+// Example:
+findModel("Thing", $id);
+```
+which will retrieve a particular model passed in parameter.
+
+This is an example of a Model
+
+```PHP
+class Thing extends Model
+{
+    public $title;
+    public $description;
+    
+    public function find($id){
+        return $this->findModel("Thing", $id);
+    }
+    public function findAll(){
+        return $this->findModelAll("Thing");
+    }
+    public function save()
+    {
+        return $this->saveModel("thing", ['title', 'description'], [$this->title, $this->description]);
+    }
+}
+```
+
+**Note:** please open this file `Core/Model` to get all the available methods.
+
 
 ### DATABASE Connection
 
