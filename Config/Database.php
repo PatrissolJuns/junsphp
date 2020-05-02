@@ -1,4 +1,9 @@
 <?php
+
+namespace Config;
+
+use PDO;
+
 /**
  * This class is used to interact with the database
  */
@@ -10,9 +15,9 @@ class Database
     }
 
     /**
-     * This method instanciate a new PDO object and return it
-     * 
-     * @return PDOInstance
+     * This method instantiate a new PDO object and return it
+     *
+     * @return PDO|null
      */
     public static function getDatabase() {
         if(is_null(self::$database)) {

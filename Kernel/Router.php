@@ -80,7 +80,7 @@ class Router
      * For request receiving in parameter, it will set the controller,
      * the action, the params according to the RoutingTable
      * 
-     * @param \Kernel\Request $request
+     * @param Request $request
      */
     
     public static function parse($request)

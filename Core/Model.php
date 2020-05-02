@@ -2,6 +2,9 @@
 
 namespace Core;
 
+use Config\Database;
+use Exception;
+
 class Model
 {
     public function findModel($model, $id)

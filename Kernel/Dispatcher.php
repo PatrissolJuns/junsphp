@@ -1,6 +1,7 @@
 <?php
 
 namespace Kernel;
+use Core\Controller;
 use Kernel\Request;
 
 /**
@@ -15,7 +16,7 @@ class Dispatcher
 
     /**
      * Principal function of the app as a whole
-     * It functions is to receive a request and dispatche it to the correspondent controller
+     * It functions is to receive a request and dispatch it to the correspondent controller
      */
     public function dispatch()
     {
@@ -35,7 +36,7 @@ class Dispatcher
      * Load a controller according to a request
      *
      * @param \Kernel\Request $request
-     * @return \Core\Controller
+     * @return Controller
      */
     public function loadController(Request $request)
     {
@@ -48,11 +49,11 @@ class Dispatcher
         // Insertion of the class controller
         require($file);
 
-        // Taking care os namespaces
-        $nameWithNamespaces = $this->controllerNamespaces . "\\" . $name;
+        // Taking care of namespaces
+        $classNameWithNamespaces = $this->controllerNamespaces . "\\" . $name;
 
-        // Instanciation of the controller
-        $controller = new $nameWithNamespaces($request);
+        // Instantiation of the controller
+        $controller = new $classNameWithNamespaces($request);
 
         // Finally return that controller
         return $controller; 

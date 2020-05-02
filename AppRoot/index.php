@@ -3,15 +3,15 @@
 use Kernel\Dispatcher;
 
 /**
- * This constant containts the relative value of the current script according to the root
+ * This constant contains the relative value of the current script according to the root
  * for instance if the script is index.php and the folder is something 
  * like C:/xampp/htdocs/MyApp/index.php
- * then the APPROOT will be / since MyApp/index.php has been removed with str_replace
+ * then the APP_ROOT will be / since MyApp/index.php has been removed with str_replace
  */
-define('APPROOT', str_replace("AppRoot/index.php", "", $_SERVER["SCRIPT_NAME"]));
+define('APP_ROOT', str_replace("AppRoot/index.php", "", $_SERVER["SCRIPT_NAME"]));
 
 /**
- * This constant containts the abosulte value of the current script
+ * This constant contains the absolute value of the current script
  * for instance if the script is index.php and the folder is something 
  * like C:/xampp/htdocs/MyApp/index.php
  * then the ROOT will be C:/xampp/htdocs/ since MyApp/index.php has been removed with str_replace
@@ -28,7 +28,7 @@ require(ROOT . 'Kernel/Request.php');
 require(ROOT . 'Kernel/Dispatcher.php');
 
 /**
- * Launch the app by instanciating the Dispatcher Class
+ * Launch the app by instantiating the Dispatcher Class
  */
 $dispatch = new Dispatcher();
 

@@ -14,7 +14,7 @@ class Controller
 
     public function redirect($url)
     {
-        return header('Location: '.APPROOT.''.$url);
+        return header('Location: '.APP_ROOT.''.$url);
     }
 
     private function secure_input($data)
