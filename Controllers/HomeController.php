@@ -2,8 +2,8 @@
 
 namespace Controllers;
 
-use View;
-use Controller;
+use Core\View;
+use Core\Controller;
 
 class HomeController extends Controller
 {

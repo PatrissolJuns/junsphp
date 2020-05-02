@@ -5,7 +5,7 @@ use Kernel\Request;
 
 /**
  * Principal class of the framework
- * It functions is to dispatche a request to the correspondent controller
+ * It functions is to dispatch a request to the correspondent controller
  */
 class Dispatcher
 {
@@ -24,7 +24,7 @@ class Dispatcher
         // Setting the different element of the request
         Router::parse($this->request); 
 
-        // Load the appropiate controller
+        // Load the appropriate controller
         $controller = $this->loadController($this->request);
 
         // Run the controller

@@ -4,13 +4,13 @@ namespace Kernel;
 
 /**
  * This class is responsible of the routing of the app.
- * It means that the only valable route are in this class.
+ * It means that the only valid route are in this class.
  * Any other one would throw an error
  */
 class Router
 {
     /**
-     * Contain the differents routes and theirs method and controller
+     * Contain the different routes and theirs method and controller
      */
     private static $RoutingTable = [];
     
