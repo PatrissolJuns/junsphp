@@ -5,13 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JunsPHP</title>
+
+    <link rel="icon" type="image/png" href="assets/images/junsphp-short-logo.png">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>JunsPHP | Minimalist Framework</title>
 </head>
 
 <body>
-    <h1>
-        Welcome to JunsPHP
-    </h1>
+    <div class="container">
+        <div class="front side">
+            <div class="content">
+                <img src="assets/images/junsphp-official-logo.png" alt="">
+                <h1>Welcome to JunsPHP</h1>
+                <p>
+                    JunsPHP is a fast, open-source, minimalist web Framework for PHP. It is simply the best choice for simple website and small apps such as portfolio page, landing page and so on.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
