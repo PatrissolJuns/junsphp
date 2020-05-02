@@ -1,10 +1,9 @@
+![Logo JunsPHP](https://i.postimg.cc/3rb3LZp3/junsphp-logo.png)
+
 # Author
 PatrissolJuns
 
 [https://patrissol-juns.com](https://patrissol-juns.com) | [Github](https://github.com/PatrissolJuns) | [E-Mail](mailto:patrissolkenfack@gmail)
- 
-![Logo JunsPHP](https://i.postimg.cc/3rb3LZp3/junsphp-logo.png)
-
 
 ## About JunsPHP
 
