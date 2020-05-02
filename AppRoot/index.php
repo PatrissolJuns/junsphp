@@ -33,4 +33,3 @@ require(ROOT . 'Kernel/Dispatcher.php');
 $dispatch = new Dispatcher();
 
 $dispatch->dispatch();
-?>
