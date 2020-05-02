@@ -1,5 +1,7 @@
 <?php
 
+namespace Core;
+
 class Model
 {
     public function findModel($model, $id)

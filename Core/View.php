@@ -1,5 +1,7 @@
 <?php
 
+namespace Core;
+
 class View
 {
     public static function render($templateFile, array $datas = array())
